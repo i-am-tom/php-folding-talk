@@ -1,0 +1,30 @@
+{
+    "name": "i-am-tom/php-folding-talk",
+    "description": "Code for the lightning talk on folds at PHPSW.",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Tom",
+            "email": "tomjharding@live.co.uk"
+        }
+    ],
+    "require-dev": {
+        "kahlan/kahlan": "^3.0",
+        "fzaninotto/faker": "^1.6"
+    },
+    "scripts": {
+        "test": "vendor/bin/kahlan --spec=test --pattern=*.php --reporter=verbose"
+    },
+    "autoload": {
+        "psr-4": {
+            "Talk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Talk\\Test\\": "test/"
+        }
+    }
+}
